@@ -7,18 +7,16 @@ import Discuss from "../../components/Discuss";
 import Portfolio from "../../components/Portfolio";
 import Team from "../../components/Team";
 import Work from "../../components/Work";
-import Quotation from "../../components/Quotation";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useRef } from "react";
 
-
 export default function Home() {
   useEffect(() => {
-    Aos.init({duration:3000})
-  }, [])
-  
+    Aos.init({ duration: 3000 });
+  }, []);
+
   const services = useRef(null);
   const team = useRef(null);
   const working = useRef(null);
@@ -31,14 +29,20 @@ export default function Home() {
   const portfolioScroll = () => portfolio.current.scrollIntoView();
   return (
     <>
-      <Header services={servicesScroll} team={teamScroll} working={workingScroll} quotation={quotationScroll} portfolio={portfolioScroll} />
+      <Header
+        services={servicesScroll}
+        team={teamScroll}
+        working={workingScroll}
+        quotation={quotationScroll}
+        portfolio={portfolioScroll}
+      />
       <Banner />
       <Services refProp={services} />
-      <Team refProp={team}/>
-      <Work refProp={working}/>
+      <Team refProp={team} />
+      <Work refProp={working} />
       {/* <Quotation refProp={quotation}/> */}
-      <Portfolio refProp={portfolio}/>
-      <Discuss/>
+      <Portfolio refProp={portfolio} />
+      <Discuss />
       <Footer />
     </>
   );
