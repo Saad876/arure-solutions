@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero-bg {
+    background-image: url(/public/images/hero-pattern.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+  }
+  .human_image_banner {
+    background-image: url(/public/images/home1-slide1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: multiply;
+    background-color: #293c5f80;
+    z-index: 1;
+    height: 600px;
+  }
+  .human_image_banner::after {
+    content: "";
+    background-image: url(/public/images/animation-2.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  .team-bg {
+    background-image: url(/public/images/consultation-bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .top-right-radius {
+    border-top-right-radius: 30px;
+  }
+  .bottom-left-radius {
+    border-bottom-left-radius: 30px;
+  }
+  .map-img {
+    background-image: url(/public/images/map-pattern-light.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .circle-shape {
+    background-image: url(/public/images/cta-shape.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: -133px;
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+    rotate: 257deg;
+  }
+  .corner-pattern {
+    background-image: url(/public/images/top-pattern.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 500px;
+    height: 356px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  .corner-pattern.bottom-pattern {
+    background-image: url(/public/images/bottom-pattern.png);
+    right: auto;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+  .triangle-pattern {
+    background-image: url(/public/images/triangle-pattern-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 500px;
+    height: 356px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  .cta-arrow {
+    background-image: url(/public/images/cta-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -40px;
+    top: -120px;
+    z-index: -1;
+  }
+  .overlay-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d2f5d;
+    display: block;
+  }
+  @media (max-width: 560px) {
+    .cta-arrow {
+      right: -35px;
+      top: -102px;
+    }
+    .human_image_banner {
+      height: 500px;
+    }
+    .human_image_banner::after {
+      width: 28%;
+      height: 28%;
+      background-size: contain;
+    }
+  }
+}
