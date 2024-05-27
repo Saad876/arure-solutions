@@ -77,7 +77,7 @@ export default function Footer() {
               Have a project in your mind?
             </h1>
             <a
-              href="/quotation"
+              href="https://www.arure.tech/"
               className="bg-darkBlue p-5 rounded-fullest text-white text-sm w-[115px] h-[115px] flex items-center hover:bg-lighBlue transition-all"
             >
               Contact Us
@@ -85,7 +85,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-center bg-darkBlue text-[#e2e8f0] py-6 mt-16 rounded-t-3xl">
-          <h3>Arure Technologies &trade;Ltd &reg;</h3>
+          <h3>
+            <a href="https://www.arure.tech/">Arure Technologies</a> &trade;Ltd
+            &reg;
+          </h3>
         </div>
       </div>
     </div>
