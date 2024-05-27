@@ -1,5 +1,20 @@
 import React from "react";
+import { portfolioData } from "./PortfolioData";
+import { PortfolioCard } from "./PortfolioCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function Portfolio(props) {
+  const settings = {
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 2,
+    speed: 500,
+    margin: "30px",
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   return (
     <div
       ref={props.refProp}
@@ -14,52 +29,14 @@ export default function Portfolio(props) {
           </h1>
         </div>
       </div>
-      <div
-        data-aos="fade-in"
-        className="w-3/4 m-auto grid grid-cols-1 md:grid-cols-2 gap-8"
-      >
-        <div>
-          <img
-            className="rounded-2xl h-56 md:h-80  md:object-cover w-full shadow-md relative overlay-img"
-            src="images/1.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="rounded-2xl h-56 md:h-80  md:object-cover w-full shadow-md relative "
-            src="images/6.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="rounded-2xl h-56 md:h-80  md:object-cover w-full shadow-md relative "
-            src="images/3.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="rounded-2xl h-56 md:h-80  md:object-cover w-full shadow-md relative "
-            src="images/4.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="rounded-2xl h-56 md:h-80  md:object-cover w-full shadow-md relative "
-            src="images/5.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            className="rounded-2xl h-56 md:h-80  md:object-cover w-full shadow-md relative "
-            src="images/2.png"
-            alt=""
-          />
-        </div>
+      <div data-aos="fade-in" className="w-3/4 m-auto">
+        <Slider {...settings}>
+          {portfolioData.map((item) => (
+            <div key={item.id}>
+              <PortfolioCard img={item.img} />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

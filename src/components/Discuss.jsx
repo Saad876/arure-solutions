@@ -6,7 +6,11 @@ export default function Discuss() {
       <div className="corner-pattern"></div>
       <div className="w-3/4 m-auto">
         <div className="md:flex-row flex flex-col items-center">
-          <div className="w-full md:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            className="w-full md:w-1/2"
+          >
             <h4 className="text-sm text-[#6C757D] font-poppins mb-4 text-center md:text-left">
               Let's Kick It Off
             </h4>
@@ -15,7 +19,11 @@ export default function Discuss() {
             </h2>
           </div>
           <div className="w-full md:w-1/2 mt-14 md:mt-0">
-            <div className="flex justify-center md:justify-end relative">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              className="flex justify-center md:justify-end relative"
+            >
               <a
                 href="/quotation"
                 class="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out bg-lighBlue rounded-full shadow-md group"

@@ -13,7 +13,10 @@ export default function Services(props) {
             What We Offer
           </h1>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-6  [&>div]:cursor-pointer">
+        <div
+          data-aos="fade-up"
+          className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-6  [&>div]:cursor-pointer"
+        >
           <div className="border space-y-4 px-6 py-12 hover:shadow-2xl rounded-r-3xl rounded-t-3xl bg-white duration-300 hover:bg-darkBlue hover:text-white">
             <div>
               <img src="images/design-icon.svg" alt="" />

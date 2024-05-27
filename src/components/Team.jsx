@@ -14,8 +14,11 @@ export default function Team(props) {
           <div className="col-span-3">
             <div className="flex gap-5">
               <div className="w-1/2 flex flex-col gap-5">
-                <img src="images/about-1.jpg" alt="" />
-                <div className="bg-darkBlue flex flex-col md:flex-row items-center py-7 px-5 bottom-left-radius gap-5">
+                <img src="images/about-1.jpg" alt="" data-aos="fade-up" />
+                <div
+                  data-aos="fade-up"
+                  className="bg-darkBlue flex flex-col md:flex-row items-center py-7 px-5 bottom-left-radius gap-5"
+                >
                   <img className="w-14" src="images/award-symbol.png" alt="" />
                   <h2 className="font-poppins text-white font-semibold text-base md:text-xl text-center md:text-left">
                     80+ Project Done
@@ -27,12 +30,13 @@ export default function Team(props) {
                   src="images/feature-2.png"
                   alt=""
                   className="top-right-radius h-full object-cover w-full"
+                  data-aos="fade-left"
                 />
               </div>
             </div>
           </div>
           <div className="col-span-3 md:col-span-2 space-y-9 rounded-xl">
-            <div>
+            <div data-aos="fade-up">
               <div className="flex flex-col items-start gap-4 border-b-2 border-[#1d2f5d29] pb-2 mb-2">
                 <img
                   src="/images/expert-designer.svg"
@@ -48,7 +52,7 @@ export default function Team(props) {
                 designs that align with your brand's style.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <div className="flex flex-col items-start gap-4 border-b-2 border-[#1d2f5d29] pb-2 mb-2">
                 <img
                   src="/images/ecommerce-pros.svg"
@@ -64,7 +68,7 @@ export default function Team(props) {
                 by helping setup all products.
               </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <div className="flex flex-col items-start gap-4 border-b-2 border-[#1d2f5d29] pb-2 mb-2">
                 <img
                   src="/images/frontend-pros.svg"
