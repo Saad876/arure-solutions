@@ -14,7 +14,7 @@ import { useRef } from "react";
 
 export default function Home() {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 1700 });
   }, []);
 
   const services = useRef(null);
