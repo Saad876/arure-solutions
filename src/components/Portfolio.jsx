@@ -27,7 +27,7 @@ export default function Portfolio(props) {
   return (
     <div
       ref={props.refProp}
-      className="py-20 bg-gradient-to-r from-[#46c6ed] to-[#ebebeb] relative z-10"
+      className="py-20 bg-gradient-to-r from-[#46c6ed] to-[#ebebeb] relative z-10 overflow-hidden"
     >
       <div className="circle-shape"></div>
       <div className="w-3/4 m-auto mb-10 text-center">

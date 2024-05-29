@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Team(props) {
   return (
-    <div ref={props.refProp} className="relative py-16">
+    <div ref={props.refProp} className="relative py-16 overflow-hidden">
       <div className="w-4/5 md:w-3/4 m-auto relative z-20">
         <div className="">
           <p className="text-black text-opacity-50">Meet Our Team</p>

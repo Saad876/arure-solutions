@@ -3,7 +3,7 @@ import WorkCard from "./WorkCard";
 
 export default function Work(props) {
   return (
-    <div ref={props.refProp} className="py-16  bg-[#0E172E]">
+    <div ref={props.refProp} className="py-16  bg-[#0E172E] overflow-hidden">
       <div className="w-4/5 md:w-3/4 m-auto">
         <div className="text-white text-center space-y-4 mb-20 font-poppins">
           <p>How It Works</p>

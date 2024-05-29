@@ -1,7 +1,7 @@
 import React from "react";
 export default function Banner(props) {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="human_image_banner">
         <div className="grid md:grid-cols-2 items-center w-11/12 md:w-3/4 m-auto pt-24 pb-24 h-full ">
           <div className="px-8 py-8 bg-darkBlue rounded-xl z-10">

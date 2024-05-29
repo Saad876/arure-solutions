@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="bg-[#0e172e] relative z-10">
+    <div className="bg-[#0e172e] relative z-10 overflow-hidden">
       <div className="map-img"></div>
       <div className="w-3/4 m-auto pt-14">
         <div className="grid lg:grid-cols-4 text-white text-start gap-x-5 gap-y-8">

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Services(props) {
   return (
-    <div className="team-bg">
+    <div className="team-bg overflow-hidden">
       <div
         ref={props.refProp}
         className="w-4/5 md:w-3/4 m-auto py-16 md:py-32 "

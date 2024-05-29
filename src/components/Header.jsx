@@ -3,7 +3,7 @@ import React from "react";
 export default function Header(props) {
   return (
     <div>
-      <header className="shadow-lg p-2 md:p-3">
+      <header className="shadow-lg p-2 md:p-3 overflow-hidden">
         <div className="flex items-center justify-between w-11/12 md:w-3/4  m-auto">
           <div>
             <a href="/">
