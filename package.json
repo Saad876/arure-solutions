@@ -1,5 +1,6 @@
 {
   "name": "arure",
+  "homepage": "https://arure.solutions/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
